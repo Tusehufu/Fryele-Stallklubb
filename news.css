@@ -1,0 +1,16 @@
+section.nyheter  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+section.nyheter .scrollbart {
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #d6d6d6;
+  font-size: xx-large;
+}
+section.nyheter div:first-child {
+    width: 75vw;
+}

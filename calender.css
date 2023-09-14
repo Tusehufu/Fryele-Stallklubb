@@ -1,0 +1,113 @@
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: Verdana, sans-serif;
+}
+.prisinformation > p {
+  font-size: x-large;
+}
+/* Month header */
+.månad {
+  padding: 70px 25px;
+  width: 100%;
+  background: #d6d6d6;
+  text-align: center;
+}
+
+/* Month list */
+.månad ul {
+  margin: 0;
+  padding: 0;
+}
+
+.månad ul li {
+  color: rgb(7, 7, 7);
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* veckodagar (Mon-Sun) */
+.veckodagar {
+  margin: 0;
+  padding: 10px 0;
+  background-color: beige;
+}
+
+.veckodagar li {
+  display: inline-block;
+  width: 13.6%;
+  color: rgb(13, 13, 13);
+  text-align: center;
+}
+
+/* Dagar */
+.dagar {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.dagar li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.dagar li .nybörjar {
+  padding: 5px;
+  background: #06ed2d;
+  color: white !important;
+}
+/* Highlight the "current" day */
+.dagar li .fortsättning {
+  padding: 5px;
+  background: #0906ec;
+  color: white !important;
+}
+/* Highlight the "current" day */
+.dagar li .avancerade {
+  padding: 5px;
+  background: #ec0505;
+  color: white !important;
+}
+.gul {
+  color: yellow;
+  text-align: center;
+}
+.grupper {
+  list-style: none; /* Remove default bullets */
+  text-align: center;
+  font-size: xx-large;
+}
+
+.grupper .röd::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: red; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.grupper .grön::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(9, 240, 36); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+.grupper .blå::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(0, 94, 255); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
