@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+<link rel="stylesheet" href="site.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href=" https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+<style>
+        section.ridlärare {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      section.ridlärare > div > h3 {
+        font-size: xx-large;
+        display: flex;
+        justify-content: center;
+      }
+      .uppgifter {
+        font-size: xx-large;
+        text-align: left;
+      }
+      .personal {
+        text-align: center;
+      }
+
+</style>
+    <header>
+      <h1>Fryele Stallklubb</h1>
+      <nav>
+        <a href="Kunduppdrag.html" style="color: white">Hem</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            <u>Ridskola</u>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="hästar.html">Våra hästar</a>
+            <a href="priser.html">Priser, grupper, kalender</a>
+            <a href="personal.html">Vår personal</a>
+          </div>
+        </div>
+        <a href="kontakt.html" style="color: white">Kontakt</a>
+      </nav>
+    </header>
+  </head>
+
+<body>
+    <section class="ridlärare">
+      <div class="personal">
+        <h3>Ridlärare</h3>
+        <img
+          src="images/blankkvinna2.png"
+          alt="ridlärare"
+          width="400px"
+          height="400px"
+        />
+        <ul class="uppgifter">
+          <li>Namn:<span class="namn">Stina Stinasson</span></li>
+          <li>
+            Mailadress:<a href="mailto:webmaster@example.com"
+              >Stina.Stinasson@fsk.com</a
+            >
+          </li>
+          <li>Telefonnummer:0700000002</li>
+        </ul>
+      </div>
+      <div class="personal">
+        <h3>Ridlärare</h3>
+        <img src="images/blankman.jpeg" alt="ridlärare" width="400px" height="400px" />
+        <ul class="uppgifter">
+          <li>Namn:<span class="namn">Jan Jansson</span></li>
+          <li>
+            Mailadress:<a href="mailto:webmaster@example.com"
+              >Jan.Jansson@fsk.com</a
+            >
+          </li>
+          <li>Telefonnummer:0700000003</li>
+        </ul>
+      </div>
+      <footer>
+        <p>&copy; Fryele-stallklubb.com</p>
+      </footer>
+</body>
+</html>
