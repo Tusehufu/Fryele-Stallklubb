@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kontakt</title>
     <link rel="stylesheet" href="site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href=" https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+      rel="stylesheet"
+    />
     <style>
       h2 {
         text-align: center;
@@ -12,35 +18,41 @@
       }
       .personal {
         text-align: center;
+        padding: 10px;
       }
 
       .namn {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       .uppgifter {
-        font-size: xx-large;
+        font-size: 1.5rem;
         text-align: left;
       }
 
       section.kontakta-oss {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
       }
       section.kontakta-oss > div > h3 {
         font-size: x-large;
       }
+
+      footer {
+        position: relative;
+      }
+
+      @media screen and (max-width: 400px) {
+        .personal {
+          padding: 0px;
+        }
+      }
     </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href=" https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css?family=Tangerine"
-      rel="stylesheet"
-    />
   </head>
   <header>
     <h1>Fryele Stallklubb</h1>
     <nav>
-      <a href="Kunduppdrag.html" style="color: white">Hem</a>
+      <a href="index.html" style="color: white">Hem</a>
       <div class="dropdown">
         <button class="dropbtn">
           <u>Ridskola </u>
@@ -57,30 +69,30 @@
   </header>
   <body>
     <h2>Kontakta oss</h2>
-    <section class="kontakta-oss" role="directory">
-      <div class="personal" role="contact">
-        <h3 itemprop="title">Ordförande</h3>
+    <section class="kontakta-oss">
+      <div class="personal">
+        <h3 class="title">Ordförande</h3>
         <img
           src="images/blankkvinna1.png"
           alt="bild på Lina Linasson"
           width="400px"
           height="400px"
         />
-        <ul class="uppgifter" role="list">
-          <li itemprop="namn">Namn: <span class="namn">Lina Linasson</span></li>
-          <li itemprop="email">
+        <ul class="uppgifter">
+          <li class="namn">Namn: <span class="namn">Lina Linasson</span></li>
+          <li class="email">
             Mailadress:<a href="mailto:webmaster@example.com"
               >Lina.linasson@fsk.com</a
             >
           </li>
-          <li itemprop="telefonnummer">Telefonnummer:0700000001</li>
+          <li class="telefonnummer">Telefonnummer:0700000001</li>
         </ul>
       </div>
       <div class="personal">
         <h3>Ridlärare</h3>
         <img
           src="images/blankkvinna2.png"
-          alt="ridlärare"
+          alt="bild på stina stinasson"
           width="400px"
           height="400px"
         />
@@ -98,7 +110,7 @@
         <h3>Ridlärare</h3>
         <img
           src="images/blankman.jpeg"
-          alt="ridlärare"
+          alt="bild på jan jansson"
           width="400px"
           height="400px"
         />
