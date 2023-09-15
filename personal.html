@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal</title>
-<link rel="stylesheet" href="site.css">
-
+    <link rel="stylesheet" href="site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href=" https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet"/>
 <style>
         section.ridlärare {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
       }
       section.ridlärare > div > h3 {
         font-size: xx-large;
@@ -20,18 +20,22 @@
         justify-content: center;
       }
       .uppgifter {
-        font-size: xx-large;
+        font-size: 1.5rem;
         text-align: left;
       }
       .personal {
         text-align: center;
       }
-
+      @media screen and (max-width: 1000px) {
+       footer {
+       position: relative;
+             }
+    }
 </style>
     <header>
       <h1>Fryele Stallklubb</h1>
       <nav>
-        <a href="Kunduppdrag.html" style="color: white">Hem</a>
+        <a href="index.html" style="color: white">Hem</a>
         <div class="dropdown">
           <button class="dropbtn">
             <u>Ridskola</u>

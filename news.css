@@ -1,4 +1,4 @@
-section.nyheter  {
+section.nyheter {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,5 +12,5 @@ section.nyheter .scrollbart {
   font-size: xx-large;
 }
 section.nyheter div:first-child {
-    width: 75vw;
+  width: 75vw;
 }
