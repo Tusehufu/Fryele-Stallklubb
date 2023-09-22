@@ -14,3 +14,6 @@ section.nyheter .scrollbart {
 section.nyheter div:first-child {
   width: 75vw;
 }
+.kontakta {
+  font-size: 2rem;
+}
